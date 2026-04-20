@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NanoCore Microsystems — Mikroprocesory przyszłości</title>
+    <meta name="description" content="NanoCore projektuje i produkuje wysokowydajne, energooszczędne mikroprocesory dla zastosowań edge, IoT i systemów wbudowanych.">
+    <style>
+        :root{--bg:#071025;--panel:#0b1220;--muted:#9aa6b2;--accent:#4f7bff;--accent-2:#8b6bff}
+        *{box-sizing:border-box}
+        body{margin:0;font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,"Helvetica Neue",Arial;background:var(--bg);color:#e6eef8}
+        header{background:transparent;color:var(--muted);padding:18px 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,0.03)}
+        .brand{display:flex;gap:14px;align-items:center}
+        .logo-text{font-weight:800;font-size:18px;color:#e6eef8}
+        nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-weight:600}
+        main{max-width:1100px;margin:28px auto;padding:12px}
+        .columns{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+        .column{background:transparent;padding:18px}
+        .title{font-size:22px;margin:0 0 10px}
+        .muted{color:var(--muted);font-size:14px}
+        .sep{border:none;border-top:1px solid rgba(255,255,255,0.06);margin:14px 0}
+        .small{font-size:13px;color:var(--muted)}
+        .cta{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;padding:10px 14px;border-radius:8px;border:none;cursor:pointer}
+        footer{max-width:1100px;margin:40px auto 80px;padding:18px 12px;color:var(--muted);text-align:center}
+        @media(max-width:900px){.columns{grid-template-columns:1fr}}
+    </style>
+    <script defer src="chatbot.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <div class="logo-text">NanoCore</div>
+        </div>
+        <nav>
+            <a href="#produkty">Produkty</a>
+            <a href="#technologie">Technologie</a>
+            <a href="#o-nas">O nas</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="columns">
+            <div class="column">
+                <h2 class="title">NanoCore — W skrócie</h2>
+                <p class="small">Projektujemy mikroprocesory i SoC zoptymalizowane do edge AI, IoT oraz systemów wbudowanych. Nasze rdzenie łączą wydajność z niskim poborem mocy i bezpieczeństwem sprzętowym.</p>
+                <hr class="sep" />
+                <h3 class="small">Flagowy rdzeń</h3>
+                <p>NC-EdgeX — 8 rdzeni RISC-V @1.8GHz · NPU 2 TOPS · TDP ~3W</p>
+                <hr class="sep" />
+                <h3 class="small">Bezpieczeństwo</h3>
+                <p class="small">Sprzętowy root-of-trust, bezpieczny boot, szyfrowanie AES-256.</p>
+                <hr class="sep" />
+                <h3 class="small">Misja</h3>
+                <p class="small">Przyspieszać wdrażanie AI na urządzeniach końcowych dzięki energooszczędnym i bezpiecznym układom.</p>
+            </div>
+
+            <div class="column">
+                <h2 class="title">Produkty i kontakt</h2>
+                <p class="small"><strong>NC-EdgeX</strong> — SoC dla edge AI z obsługą ONNX/TF-Lite.</p>
+                <hr class="sep" />
+                <p class="small"><strong>NC-Embed</strong> — Ultra-low-power MCU dla sensorów.</p>
+                <hr class="sep" />
+                <p class="small"><strong>NC-Accel</strong> — Moduł akceleratora inferencji M.2.</p>
+                <hr class="sep" />
+                <h3 class="small">Kontakt</h3>
+                <p class="small">NanoCore Microsystems · ul. Techniczna 21, 02-222 Warszawa<br>E: kontakt@nanocore.example · T: +48 22 555 0101</p>
+                <div style="margin-top:12px"><button class="cta" onclick="document.getElementById('kontakt').scrollIntoView({behavior:'smooth'})">Poproś o demo</button></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        © 2026 NanoCore Microsystems — Wszystkie prawa zastrzeżone. Dokumentacja techniczna i wsparcie dostępne na żądanie.
+    </footer>
+</body>
+
+</html>
