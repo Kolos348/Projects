@@ -1,1 +1,0 @@
-Wszystkie projekty kożystają .NET SDK version 10
